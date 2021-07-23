@@ -1,131 +1,150 @@
+@prefix ECO: <http://purl.obolibrary.org/obo/ECO_> .
+@prefix GO: <http://purl.obolibrary.org/obo/GO_> .
+@prefix ZFIN: <http://identifiers.org/zfin/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ns1: <http://geneontology.org/lego/> .
+@prefix ns2: <http://purl.org/pav/> .
+@prefix ns3: <https://w3id.org/biolink/vocab/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42> a <http://www.w3.org/2002/07/owl#Ontology> .
+ns1:evidence a owl:AnnotationProperty .
 
-<http://purl.org/pav/providedBy> a <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://geneontology.org/lego/hint/layout/x> a owl:AnnotationProperty .
 
-<http://geneontology.org/lego/evidence> a <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://geneontology.org/lego/hint/layout/y> a owl:AnnotationProperty .
 
-<http://geneontology.org/lego/hint/layout/x> a <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+dc:contributor a owl:AnnotationProperty .
 
-<http://geneontology.org/lego/hint/layout/y> a <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+dc:date a owl:AnnotationProperty .
 
-<http://purl.obolibrary.org/obo/RO_0002333> a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+dc:source a owl:AnnotationProperty .
 
-<http://purl.obolibrary.org/obo/RO_0002418> a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+ns2:providedBy a owl:AnnotationProperty .
 
-<http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42> <http://geneontology.org/lego/modelstate> "production" ;
-	<http://purl.org/pav/providedBy> "http://zfin.org" ;
-	<https://w3id.org/biolink/vocab/in_taxon> <http://purl.obolibrary.org/obo/NCBITaxon_7955> ;
-	<http://www.w3.org/2002/07/owl#versionIRI> <http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42> ;
-	a <http://www.w3.org/2002/07/owl#Ontology> ;
-	<http://purl.org/dc/elements/1.1/title> "pkn2a (ZFIN:ZDB-GENE-061207-42)" ;
-	<http://purl.org/dc/elements/1.1/contributor> "GOC:zfin_curators" ;
-	<http://purl.org/dc/elements/1.1/date> "2021-06-23" .
+<http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42> a owl:Ontology ;
+    ns1:modelstate "development" ;
+    dc:contributor "GOC:zfin_curators" ;
+    dc:date "2021-07-23" ;
+    dc:title "pkn2a (ZFIN:ZDB-GENE-061207-42)" ;
+    ns2:providedBy "http://zfin.org" ;
+    owl:versionIRI <http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42> ;
+    ns3:in_taxon obo:NCBITaxon_7955 .
 
-<http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42/01280fb5-ce80-438a-b161-5a1a964730e2> <http://purl.org/pav/providedBy> "http://zfin.org" ;
-	<http://geneontology.org/lego/evidence-with> "ZFIN:ZDB-MRPHLNO-151112-3" ;
-	a <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://purl.obolibrary.org/obo/ECO_0000315> ;
-	<http://purl.org/dc/elements/1.1/contributor> "GOC:zfin_curators" ;
-	<http://purl.org/dc/elements/1.1/date> "2015-11-17" ;
-	<http://purl.org/dc/elements/1.1/source> "PMID:25533962" .
+<http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42/5fba30ea-3b06-439a-9546-c60c45cb033a> a ECO:0000315,
+        owl:NamedIndividual ;
+    ns1:evidence-with "ZFIN:ZDB-MRPHLNO-151112-3" ;
+    dc:contributor "GOC:zfin_curators" ;
+    dc:date "2015-11-17" ;
+    dc:source "PMID:25533962" ;
+    ns2:providedBy "http://zfin.org" .
 
-<http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42/04ab821d-4114-44ef-ae4d-375c19697a95> <http://purl.org/pav/providedBy> "http://zfin.org" ;
-	a <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://identifiers.org/zfin/ZDB-GENE-061207-42> ;
-	<http://purl.org/dc/elements/1.1/contributor> "GOC:zfin_curators" ;
-	<http://purl.org/dc/elements/1.1/date> "2015-11-17" .
+<http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42/820eb1de-d5f8-47d6-a977-065d5390161d> a ECO:0000315,
+        owl:NamedIndividual ;
+    ns1:evidence-with "ZFIN:ZDB-MRPHLNO-151112-3" ;
+    dc:contributor "GOC:zfin_curators" ;
+    dc:date "2015-11-17" ;
+    dc:source "PMID:25533962" ;
+    ns2:providedBy "http://zfin.org" .
 
-<http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42/26106175-3ee7-4ecf-91e9-2b186f096249> <http://purl.org/pav/providedBy> "http://zfin.org" ;
-	<http://purl.obolibrary.org/obo/RO_0002333> <http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42/cbfd7778-168a-44fa-b562-4af3c84dba42> ;
-	<http://purl.obolibrary.org/obo/RO_0002418> <http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42/eacd6b13-c59d-434f-b2f0-7d7b155bc144> ;
-	a <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://purl.obolibrary.org/obo/GO_0003674> ;
-	<http://purl.org/dc/elements/1.1/contributor> "GOC:zfin_curators" ;
-	<http://purl.org/dc/elements/1.1/date> "2015-11-17" .
+<http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42/b23ea181-4c24-440b-8db5-0b7b0dd7c805> a ECO:0000315,
+        owl:NamedIndividual ;
+    ns1:evidence-with "ZFIN:ZDB-MRPHLNO-151112-3" ;
+    dc:contributor "GOC:zfin_curators" ;
+    dc:date "2015-11-17" ;
+    dc:source "PMID:25533962" ;
+    ns2:providedBy "http://zfin.org" .
 
-<http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42/347f4d36-a872-4af7-9f1d-6be229aaec7f> <http://purl.org/pav/providedBy> "http://zfin.org" ;
-	<http://geneontology.org/lego/evidence-with> "ZFIN:ZDB-MRPHLNO-151112-3" ;
-	a <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://purl.obolibrary.org/obo/ECO_0000315> ;
-	<http://purl.org/dc/elements/1.1/contributor> "GOC:zfin_curators" ;
-	<http://purl.org/dc/elements/1.1/date> "2015-11-17" ;
-	<http://purl.org/dc/elements/1.1/source> "PMID:25533962" .
+<http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42/dfc57168-2aa6-4e15-99cc-4aa515f0f6ce> a ECO:0000315,
+        owl:NamedIndividual ;
+    ns1:evidence-with "ZFIN:ZDB-MRPHLNO-151112-3" ;
+    dc:contributor "GOC:zfin_curators" ;
+    dc:date "2015-11-17" ;
+    dc:source "PMID:25533962" ;
+    ns2:providedBy "http://zfin.org" .
 
-<http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42/9a6ccada-df21-407f-bd8e-22cb2bc16a68> <http://purl.org/pav/providedBy> "http://zfin.org" ;
-	a <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://purl.obolibrary.org/obo/GO_0007507> ;
-	<http://purl.org/dc/elements/1.1/contributor> "GOC:zfin_curators" ;
-	<http://purl.org/dc/elements/1.1/date> "2015-11-17" .
+<http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42/10cebbb7-f580-4a66-9ae6-b5ad31c71120> a ZFIN:ZDB-GENE-061207-42,
+        owl:NamedIndividual ;
+    dc:contributor "GOC:zfin_curators" ;
+    dc:date "2015-11-17" ;
+    ns2:providedBy "http://zfin.org" .
 
-<http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42/a7033d20-a08c-4607-bfc5-a6c490e47c30> <http://purl.org/pav/providedBy> "http://zfin.org" ;
-	<http://geneontology.org/lego/evidence-with> "ZFIN:ZDB-MRPHLNO-151112-3" ;
-	a <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://purl.obolibrary.org/obo/ECO_0000315> ;
-	<http://purl.org/dc/elements/1.1/contributor> "GOC:zfin_curators" ;
-	<http://purl.org/dc/elements/1.1/date> "2015-11-17" ;
-	<http://purl.org/dc/elements/1.1/source> "PMID:25533962" .
+<http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42/2c3a1044-4825-4c61-84eb-a7e7c2976bbc> a GO:0007507,
+        owl:NamedIndividual ;
+    dc:contributor "GOC:zfin_curators" ;
+    dc:date "2015-11-17" ;
+    ns2:providedBy "http://zfin.org" .
 
-<http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42/cbfd7778-168a-44fa-b562-4af3c84dba42> <http://purl.org/pav/providedBy> "http://zfin.org" ;
-	a <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://identifiers.org/zfin/ZDB-GENE-061207-42> ;
-	<http://purl.org/dc/elements/1.1/contributor> "GOC:zfin_curators" ;
-	<http://purl.org/dc/elements/1.1/date> "2015-11-17" .
+<http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42/6c5acd9c-780d-4f85-bfa8-597174274abc> a GO:0048703,
+        owl:NamedIndividual ;
+    dc:contributor "GOC:zfin_curators" ;
+    dc:date "2015-11-17" ;
+    ns2:providedBy "http://zfin.org" .
 
-<http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42/d7941dc9-9157-4474-9f31-4b2eb2a11c7a> <http://purl.org/pav/providedBy> "http://zfin.org" ;
-	<http://purl.obolibrary.org/obo/RO_0002333> <http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42/04ab821d-4114-44ef-ae4d-375c19697a95> ;
-	<http://purl.obolibrary.org/obo/RO_0002418> <http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42/9a6ccada-df21-407f-bd8e-22cb2bc16a68> ;
-	a <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://purl.obolibrary.org/obo/GO_0003674> ;
-	<http://purl.org/dc/elements/1.1/contributor> "GOC:zfin_curators" ;
-	<http://purl.org/dc/elements/1.1/date> "2015-11-17" .
+<http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42/adaf78df-d427-4730-bf91-326a1c9e2b6a> a GO:0003674,
+        owl:NamedIndividual ;
+    obo:RO_0002333 <http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42/f1887910-56cf-45b5-821a-72fa19691156> ;
+    obo:RO_0002418 <http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42/2c3a1044-4825-4c61-84eb-a7e7c2976bbc> ;
+    dc:contributor "GOC:zfin_curators" ;
+    dc:date "2015-11-17" ;
+    ns2:providedBy "http://zfin.org" .
 
-<http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42/e92b6450-6e99-4c96-be4a-facebad64ddc> <http://purl.org/pav/providedBy> "http://zfin.org" ;
-	<http://geneontology.org/lego/evidence-with> "ZFIN:ZDB-MRPHLNO-151112-3" ;
-	a <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://purl.obolibrary.org/obo/ECO_0000315> ;
-	<http://purl.org/dc/elements/1.1/contributor> "GOC:zfin_curators" ;
-	<http://purl.org/dc/elements/1.1/date> "2015-11-17" ;
-	<http://purl.org/dc/elements/1.1/source> "PMID:25533962" .
+<http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42/f1887910-56cf-45b5-821a-72fa19691156> a ZFIN:ZDB-GENE-061207-42,
+        owl:NamedIndividual ;
+    dc:contributor "GOC:zfin_curators" ;
+    dc:date "2015-11-17" ;
+    ns2:providedBy "http://zfin.org" .
 
-<http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42/eacd6b13-c59d-434f-b2f0-7d7b155bc144> <http://purl.org/pav/providedBy> "http://zfin.org" ;
-	a <http://www.w3.org/2002/07/owl#NamedIndividual> , <http://purl.obolibrary.org/obo/GO_0048703> ;
-	<http://purl.org/dc/elements/1.1/contributor> "GOC:zfin_curators" ;
-	<http://purl.org/dc/elements/1.1/date> "2015-11-17" .
+<http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42/f66e078f-e4f0-4683-9903-c5976b815eee> a GO:0003674,
+        owl:NamedIndividual ;
+    obo:RO_0002333 <http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42/10cebbb7-f580-4a66-9ae6-b5ad31c71120> ;
+    obo:RO_0002418 <http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42/6c5acd9c-780d-4f85-bfa8-597174274abc> ;
+    dc:contributor "GOC:zfin_curators" ;
+    dc:date "2015-11-17" ;
+    ns2:providedBy "http://zfin.org" .
 
-<http://purl.org/dc/elements/1.1/contributor> a <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+obo:RO_0002333 a owl:ObjectProperty .
 
-<http://purl.org/dc/elements/1.1/date> a <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+obo:RO_0002418 a owl:ObjectProperty .
 
-<http://purl.org/dc/elements/1.1/source> a <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+[] a owl:Axiom ;
+    ns1:evidence <http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42/820eb1de-d5f8-47d6-a977-065d5390161d> ;
+    dc:contributor "GOC:zfin_curators" ;
+    dc:date "2015-11-17" ;
+    ns2:providedBy "http://zfin.org" ;
+    rdfs:comment "ZFIN:ZDB-GENE-061207-42  RO:0002264 GO:0048703 ZFIN:ZDB-PUB-151109-1|PMID:25533962 ECO:0000315 ZFIN:ZDB-MRPHLNO-151112-3  2015-11-17 ZFIN  contributor-id=GOC:zfin_curators" ;
+    owl:annotatedProperty obo:RO_0002333 ;
+    owl:annotatedSource <http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42/f66e078f-e4f0-4683-9903-c5976b815eee> ;
+    owl:annotatedTarget <http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42/10cebbb7-f580-4a66-9ae6-b5ad31c71120> .
 
-_:t435963 <http://purl.org/pav/providedBy> "http://zfin.org" ;
-	<http://geneontology.org/lego/evidence> <http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42/e92b6450-6e99-4c96-be4a-facebad64ddc> ;
-	<http://www.w3.org/2002/07/owl#annotatedProperty> <http://purl.obolibrary.org/obo/RO_0002418> ;
-	<http://www.w3.org/2002/07/owl#annotatedSource> <http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42/26106175-3ee7-4ecf-91e9-2b186f096249> ;
-	<http://www.w3.org/2002/07/owl#annotatedTarget> <http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42/eacd6b13-c59d-434f-b2f0-7d7b155bc144> ;
-	a <http://www.w3.org/2002/07/owl#Axiom> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "ZFIN:ZDB-GENE-061207-42  RO:0002264 GO:0048703 ZFIN:ZDB-PUB-151109-1|PMID:25533962 ECO:0000315 ZFIN:ZDB-MRPHLNO-151112-3  2015-11-17 ZFIN  contributor-id=GOC:zfin_curators" ;
-	<http://purl.org/dc/elements/1.1/contributor> "GOC:zfin_curators" ;
-	<http://purl.org/dc/elements/1.1/date> "2015-11-17" .
+[] a owl:Axiom ;
+    ns1:evidence <http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42/b23ea181-4c24-440b-8db5-0b7b0dd7c805> ;
+    dc:contributor "GOC:zfin_curators" ;
+    dc:date "2015-11-17" ;
+    ns2:providedBy "http://zfin.org" ;
+    rdfs:comment "ZFIN:ZDB-GENE-061207-42  RO:0002264 GO:0007507 ZFIN:ZDB-PUB-151109-1|PMID:25533962 ECO:0000315 ZFIN:ZDB-MRPHLNO-151112-3  2015-11-17 ZFIN  contributor-id=GOC:zfin_curators" ;
+    owl:annotatedProperty obo:RO_0002333 ;
+    owl:annotatedSource <http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42/adaf78df-d427-4730-bf91-326a1c9e2b6a> ;
+    owl:annotatedTarget <http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42/f1887910-56cf-45b5-821a-72fa19691156> .
 
-_:t435964 <http://purl.org/pav/providedBy> "http://zfin.org" ;
-	<http://geneontology.org/lego/evidence> <http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42/347f4d36-a872-4af7-9f1d-6be229aaec7f> ;
-	<http://www.w3.org/2002/07/owl#annotatedProperty> <http://purl.obolibrary.org/obo/RO_0002333> ;
-	<http://www.w3.org/2002/07/owl#annotatedSource> <http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42/d7941dc9-9157-4474-9f31-4b2eb2a11c7a> ;
-	<http://www.w3.org/2002/07/owl#annotatedTarget> <http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42/04ab821d-4114-44ef-ae4d-375c19697a95> ;
-	a <http://www.w3.org/2002/07/owl#Axiom> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "ZFIN:ZDB-GENE-061207-42  RO:0002264 GO:0007507 ZFIN:ZDB-PUB-151109-1|PMID:25533962 ECO:0000315 ZFIN:ZDB-MRPHLNO-151112-3  2015-11-17 ZFIN  contributor-id=GOC:zfin_curators" ;
-	<http://purl.org/dc/elements/1.1/contributor> "GOC:zfin_curators" ;
-	<http://purl.org/dc/elements/1.1/date> "2015-11-17" .
+[] a owl:Axiom ;
+    ns1:evidence <http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42/5fba30ea-3b06-439a-9546-c60c45cb033a> ;
+    dc:contributor "GOC:zfin_curators" ;
+    dc:date "2015-11-17" ;
+    ns2:providedBy "http://zfin.org" ;
+    rdfs:comment "ZFIN:ZDB-GENE-061207-42  RO:0002264 GO:0007507 ZFIN:ZDB-PUB-151109-1|PMID:25533962 ECO:0000315 ZFIN:ZDB-MRPHLNO-151112-3  2015-11-17 ZFIN  contributor-id=GOC:zfin_curators" ;
+    owl:annotatedProperty obo:RO_0002418 ;
+    owl:annotatedSource <http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42/adaf78df-d427-4730-bf91-326a1c9e2b6a> ;
+    owl:annotatedTarget <http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42/2c3a1044-4825-4c61-84eb-a7e7c2976bbc> .
 
-_:t435965 <http://purl.org/pav/providedBy> "http://zfin.org" ;
-	<http://geneontology.org/lego/evidence> <http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42/a7033d20-a08c-4607-bfc5-a6c490e47c30> ;
-	<http://www.w3.org/2002/07/owl#annotatedProperty> <http://purl.obolibrary.org/obo/RO_0002333> ;
-	<http://www.w3.org/2002/07/owl#annotatedSource> <http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42/26106175-3ee7-4ecf-91e9-2b186f096249> ;
-	<http://www.w3.org/2002/07/owl#annotatedTarget> <http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42/cbfd7778-168a-44fa-b562-4af3c84dba42> ;
-	a <http://www.w3.org/2002/07/owl#Axiom> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "ZFIN:ZDB-GENE-061207-42  RO:0002264 GO:0048703 ZFIN:ZDB-PUB-151109-1|PMID:25533962 ECO:0000315 ZFIN:ZDB-MRPHLNO-151112-3  2015-11-17 ZFIN  contributor-id=GOC:zfin_curators" ;
-	<http://purl.org/dc/elements/1.1/contributor> "GOC:zfin_curators" ;
-	<http://purl.org/dc/elements/1.1/date> "2015-11-17" .
+[] a owl:Axiom ;
+    ns1:evidence <http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42/dfc57168-2aa6-4e15-99cc-4aa515f0f6ce> ;
+    dc:contributor "GOC:zfin_curators" ;
+    dc:date "2015-11-17" ;
+    ns2:providedBy "http://zfin.org" ;
+    rdfs:comment "ZFIN:ZDB-GENE-061207-42  RO:0002264 GO:0048703 ZFIN:ZDB-PUB-151109-1|PMID:25533962 ECO:0000315 ZFIN:ZDB-MRPHLNO-151112-3  2015-11-17 ZFIN  contributor-id=GOC:zfin_curators" ;
+    owl:annotatedProperty obo:RO_0002418 ;
+    owl:annotatedSource <http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42/f66e078f-e4f0-4683-9903-c5976b815eee> ;
+    owl:annotatedTarget <http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42/6c5acd9c-780d-4f85-bfa8-597174274abc> .
 
-_:t435966 <http://purl.org/pav/providedBy> "http://zfin.org" ;
-	<http://geneontology.org/lego/evidence> <http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42/01280fb5-ce80-438a-b161-5a1a964730e2> ;
-	<http://www.w3.org/2002/07/owl#annotatedProperty> <http://purl.obolibrary.org/obo/RO_0002418> ;
-	<http://www.w3.org/2002/07/owl#annotatedSource> <http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42/d7941dc9-9157-4474-9f31-4b2eb2a11c7a> ;
-	<http://www.w3.org/2002/07/owl#annotatedTarget> <http://model.geneontology.org/ZFIN_ZDB-GENE-061207-42/9a6ccada-df21-407f-bd8e-22cb2bc16a68> ;
-	a <http://www.w3.org/2002/07/owl#Axiom> ;
-	<http://www.w3.org/2000/01/rdf-schema#comment> "ZFIN:ZDB-GENE-061207-42  RO:0002264 GO:0007507 ZFIN:ZDB-PUB-151109-1|PMID:25533962 ECO:0000315 ZFIN:ZDB-MRPHLNO-151112-3  2015-11-17 ZFIN  contributor-id=GOC:zfin_curators" ;
-	<http://purl.org/dc/elements/1.1/contributor> "GOC:zfin_curators" ;
-	<http://purl.org/dc/elements/1.1/date> "2015-11-17" .
