@@ -6,10 +6,14 @@ A repository of ZFIN models imported in bulk as part of MOD-imports project.
 - source : the ZFIN provided GPAD 2.0 file and the GPAD 2.0 file recreated via ontobio scripts.  
 
 ### Generate gpad2.0_from_zfin_final.gpad from gpad2.0.zfin_orginal:
-```bash
-models : all the models imported from ZFIN curation interface in .ttl format
-source : the ZFIN provided GPAD 2.0 file and the GPAD 2.0 file recreated via ontobio scripts.  
 
+- models : all the models imported from ZFIN curation interface in .ttl format
+- source : the ZFIN provided GPAD 2.0 file and the GPAD 2.0 file recreated via ontobio scripts.  
+
+gpad2.0.zfin_original - original GPAD2.0 submitted from ZFIN
+gpad2.0.zfin_final_vaid.gpad - GPAD2.0 file generated via ontobio validate.py script.
+
+```bash
 Generate gpad2.0_from_zfin_final.gpad from gpad2.0.zfin_orginal:
 % git clone https://github.com/biolink/ontobio
 % cd ontobio
