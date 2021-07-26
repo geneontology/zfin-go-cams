@@ -2,14 +2,14 @@
 @prefix GO: <http://purl.obolibrary.org/obo/GO_> .
 @prefix ZFIN: <http://identifiers.org/zfin/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix ns1: <http://geneontology.org/lego/> .
-@prefix ns2: <http://purl.org/pav/> .
+@prefix ns1: <http://purl.org/pav/> .
+@prefix ns2: <http://geneontology.org/lego/> .
 @prefix ns3: <https://w3id.org/biolink/vocab/> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-ns1:evidence a owl:AnnotationProperty .
+ns2:evidence a owl:AnnotationProperty .
 
 <http://geneontology.org/lego/hint/layout/x> a owl:AnnotationProperty .
 
@@ -21,46 +21,46 @@ dc:date a owl:AnnotationProperty .
 
 dc:source a owl:AnnotationProperty .
 
-ns2:providedBy a owl:AnnotationProperty .
+ns1:providedBy a owl:AnnotationProperty .
 
 <http://model.geneontology.org/ZFIN_ZDB-GENE-110411-43> a owl:Ontology ;
-    ns1:modelstate "development" ;
+    ns2:modelstate "production" ;
     dc:contributor "GOC:zfin_curators" ;
-    dc:date "2021-07-23" ;
+    dc:date "2021-07-26" ;
     dc:title "tmtops2b (ZFIN:ZDB-GENE-110411-43)" ;
-    ns2:providedBy "http://zfin.org" ;
+    ns1:providedBy "http://zfin.org" ;
     owl:versionIRI <http://model.geneontology.org/ZFIN_ZDB-GENE-110411-43> ;
     ns3:in_taxon obo:NCBITaxon_7955 .
 
-<http://model.geneontology.org/ZFIN_ZDB-GENE-110411-43/217593fb-b01e-4bfa-a913-7fd321377d12> a GO:0009881,
-        owl:NamedIndividual ;
-    obo:RO_0002333 <http://model.geneontology.org/ZFIN_ZDB-GENE-110411-43/5bd36599-3d82-492e-bf05-e561bb24b647> ;
-    dc:contributor "GOC:zfin_curators" ;
-    dc:date "2013-08-28" ;
-    ns2:providedBy "http://zfin.org" .
-
-<http://model.geneontology.org/ZFIN_ZDB-GENE-110411-43/e238884e-5ad7-427f-89b7-91408e3668dc> a ECO:0000314,
+<http://model.geneontology.org/ZFIN_ZDB-GENE-110411-43/e1a27271-18f5-4bda-9641-60088e1a2290> a ECO:0000314,
         owl:NamedIndividual ;
     dc:contributor "GOC:zfin_curators" ;
     dc:date "2013-08-28" ;
     dc:source "PMID:23776409" ;
-    ns2:providedBy "http://zfin.org" .
+    ns1:providedBy "http://zfin.org" .
+
+<http://model.geneontology.org/ZFIN_ZDB-GENE-110411-43/fc981c91-6a80-4b41-9ab1-6047e69345ac> a GO:0009881,
+        owl:NamedIndividual ;
+    obo:RO_0002333 <http://model.geneontology.org/ZFIN_ZDB-GENE-110411-43/6368da37-06f5-4221-a734-196ecd3f5adc> ;
+    dc:contributor "GOC:zfin_curators" ;
+    dc:date "2013-08-28" ;
+    ns1:providedBy "http://zfin.org" .
 
 obo:RO_0002333 a owl:ObjectProperty .
 
-<http://model.geneontology.org/ZFIN_ZDB-GENE-110411-43/5bd36599-3d82-492e-bf05-e561bb24b647> a ZFIN:ZDB-GENE-110411-43,
+<http://model.geneontology.org/ZFIN_ZDB-GENE-110411-43/6368da37-06f5-4221-a734-196ecd3f5adc> a ZFIN:ZDB-GENE-110411-43,
         owl:NamedIndividual ;
     dc:contributor "GOC:zfin_curators" ;
     dc:date "2013-08-28" ;
-    ns2:providedBy "http://zfin.org" .
+    ns1:providedBy "http://zfin.org" .
 
 [] a owl:Axiom ;
-    ns1:evidence <http://model.geneontology.org/ZFIN_ZDB-GENE-110411-43/e238884e-5ad7-427f-89b7-91408e3668dc> ;
+    ns2:evidence <http://model.geneontology.org/ZFIN_ZDB-GENE-110411-43/e1a27271-18f5-4bda-9641-60088e1a2290> ;
     dc:contributor "GOC:zfin_curators" ;
     dc:date "2013-08-28" ;
-    ns2:providedBy "http://zfin.org" ;
+    ns1:providedBy "http://zfin.org" ;
     rdfs:comment "ZFIN:ZDB-GENE-110411-43  RO:0002327 GO:0009881 ZFIN:ZDB-PUB-130710-20|PMID:23776409 ECO:0000314   2013-08-28 ZFIN  contributor-id=GOC:zfin_curators" ;
     owl:annotatedProperty obo:RO_0002333 ;
-    owl:annotatedSource <http://model.geneontology.org/ZFIN_ZDB-GENE-110411-43/217593fb-b01e-4bfa-a913-7fd321377d12> ;
-    owl:annotatedTarget <http://model.geneontology.org/ZFIN_ZDB-GENE-110411-43/5bd36599-3d82-492e-bf05-e561bb24b647> .
+    owl:annotatedSource <http://model.geneontology.org/ZFIN_ZDB-GENE-110411-43/fc981c91-6a80-4b41-9ab1-6047e69345ac> ;
+    owl:annotatedTarget <http://model.geneontology.org/ZFIN_ZDB-GENE-110411-43/6368da37-06f5-4221-a734-196ecd3f5adc> .
 
