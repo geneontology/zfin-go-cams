@@ -1,0 +1,72 @@
+{
+  "taxa": [
+    "http://purl.obolibrary.org/obo/NCBITaxon_7955"
+  ],
+  "number_of_models": 8112,
+  "number_of_models_in_error": 1,
+  "number_of_correct_models": 65,
+  "messages": {
+    "gorule-0000019": [],
+    "gorule-0000056": [
+      {
+        "level": "WARNING",
+        "model-id": "gomodel:ZFIN_ZDB-GENE-070821-4",
+        "type": "Violates GO Rule",
+        "obj": "",
+        "taxa": [
+          "http://purl.obolibrary.org/obo/NCBITaxon_7955"
+        ],
+        "message": "GORULE:0000056: Model does not validate against shex schema",
+        "rule": 56,
+        "explanations": {
+          "is-conformant": false,
+          "owl-validation": {
+            "id": "OWL_REASONER",
+            "is-conformant": true,
+            "tracker": "https://github.com/geneontology/helpdesk/issues",
+            "rule-file": "https://github.com/geneontology/go-ontology"
+          },
+          "shex-validation": {
+            "node-matched-shapes": {},
+            "is-conformant": false,
+            "tracker": "https://github.com/geneontology/go-shapes/issues",
+            "rule-file": "https://github.com/geneontology/go-shapes/blob/master/shapes/go-cam-shapes.shex",
+            "violations": [
+              {
+                "explanations": [
+                  {
+                    "shape": "obo:go/shapes/InformationBiomacromolecule",
+                    "constraints": [
+                      {
+                        "object": "http://model.geneontology.org/ZFIN_ZDB-GENE-070821-4/9adf0cfe-403a-4f8f-9505-e2e7cad7a0eb",
+                        "property": "RO:0002326",
+                        "node_types": [
+                          "CHEBI:33695",
+                          "ZFIN:ZDB-GENE-070821-4"
+                        ],
+                        "object_types": [
+                          "GO:0015464"
+                        ],
+                        "nobjects": 0,
+                        "matched_range_shapes": [
+                          "obo:go/shapes/ProvenanceAnnotated",
+                          "obo:go/shapes/MolecularFunction",
+                          "obo:go/shapes/MolecularEvent",
+                          "obo:go/shapes/GoCamEntity"
+                        ],
+                        "intended-range-shapes": [
+                          "owl:Nothing"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "node": "gomodel:ZFIN_ZDB-GENE-070821-4/12a69095-0801-43df-8555-c5b66c6dbb02"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}
