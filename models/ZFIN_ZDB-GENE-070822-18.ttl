@@ -2,14 +2,14 @@
 @prefix GO: <http://purl.obolibrary.org/obo/GO_> .
 @prefix ZFIN: <http://identifiers.org/zfin/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix ns1: <http://geneontology.org/lego/> .
-@prefix ns2: <http://purl.org/pav/> .
+@prefix ns1: <http://purl.org/pav/> .
+@prefix ns2: <http://geneontology.org/lego/> .
 @prefix ns3: <https://w3id.org/biolink/vocab/> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-ns1:evidence a owl:AnnotationProperty .
+ns2:evidence a owl:AnnotationProperty .
 
 <http://geneontology.org/lego/hint/layout/x> a owl:AnnotationProperty .
 
@@ -21,46 +21,46 @@ dc:date a owl:AnnotationProperty .
 
 dc:source a owl:AnnotationProperty .
 
-ns2:providedBy a owl:AnnotationProperty .
+ns1:providedBy a owl:AnnotationProperty .
 
 <http://model.geneontology.org/ZFIN_ZDB-GENE-070822-18> a owl:Ontology ;
-    ns1:modelstate "development" ;
+    ns2:modelstate "production" ;
     dc:contributor "GOC:zfin_curators" ;
-    dc:date "2021-07-23" ;
+    dc:date "2021-07-26" ;
     dc:title "crybb1l2 (ZFIN:ZDB-GENE-070822-18)" ;
-    ns2:providedBy "http://zfin.org" ;
+    ns1:providedBy "http://zfin.org" ;
     owl:versionIRI <http://model.geneontology.org/ZFIN_ZDB-GENE-070822-18> ;
     ns3:in_taxon obo:NCBITaxon_7955 .
 
-<http://model.geneontology.org/ZFIN_ZDB-GENE-070822-18/1206fe25-b909-4024-8505-f073c8c6672b> a ECO:0000307,
+<http://model.geneontology.org/ZFIN_ZDB-GENE-070822-18/06ba45c4-0542-46e5-baf0-65c08e67e817> a ZFIN:ZDB-GENE-070822-18,
+        owl:NamedIndividual ;
+    obo:RO_0002432 <http://model.geneontology.org/ZFIN_ZDB-GENE-070822-18/d0d74f88-1f8c-4dc1-85df-364fc544b366> ;
+    dc:contributor "GOC:zfin_curators" ;
+    dc:date "2007-08-22" ;
+    ns1:providedBy "http://zfin.org" .
+
+<http://model.geneontology.org/ZFIN_ZDB-GENE-070822-18/459641f6-a82a-443b-88d8-ccca5d39bf1b> a ECO:0000307,
         owl:NamedIndividual ;
     dc:contributor "GOC:zfin_curators" ;
     dc:date "2007-08-22" ;
     dc:source "ZFIN:ZDB-PUB-031118-1" ;
-    ns2:providedBy "http://zfin.org" .
-
-<http://model.geneontology.org/ZFIN_ZDB-GENE-070822-18/173bbaf1-3baf-4076-ae1e-70ce4cdab763> a ZFIN:ZDB-GENE-070822-18,
-        owl:NamedIndividual ;
-    obo:RO_0002432 <http://model.geneontology.org/ZFIN_ZDB-GENE-070822-18/f65e8a9b-5ecf-4276-87e8-2872a0b3e5ff> ;
-    dc:contributor "GOC:zfin_curators" ;
-    dc:date "2007-08-22" ;
-    ns2:providedBy "http://zfin.org" .
+    ns1:providedBy "http://zfin.org" .
 
 obo:RO_0002432 a owl:ObjectProperty .
 
-<http://model.geneontology.org/ZFIN_ZDB-GENE-070822-18/f65e8a9b-5ecf-4276-87e8-2872a0b3e5ff> a GO:0005575,
+<http://model.geneontology.org/ZFIN_ZDB-GENE-070822-18/d0d74f88-1f8c-4dc1-85df-364fc544b366> a GO:0005575,
         owl:NamedIndividual ;
     dc:contributor "GOC:zfin_curators" ;
     dc:date "2007-08-22" ;
-    ns2:providedBy "http://zfin.org" .
+    ns1:providedBy "http://zfin.org" .
 
 [] a owl:Axiom ;
-    ns1:evidence <http://model.geneontology.org/ZFIN_ZDB-GENE-070822-18/1206fe25-b909-4024-8505-f073c8c6672b> ;
+    ns2:evidence <http://model.geneontology.org/ZFIN_ZDB-GENE-070822-18/459641f6-a82a-443b-88d8-ccca5d39bf1b> ;
     dc:contributor "GOC:zfin_curators" ;
     dc:date "2007-08-22" ;
-    ns2:providedBy "http://zfin.org" ;
+    ns1:providedBy "http://zfin.org" ;
     rdfs:comment "ZFIN:ZDB-GENE-070822-18  RO:0002432 GO:0005575 ZFIN:ZDB-PUB-031118-1 ECO:0000307   2007-08-22 ZFIN  contributor-id=GOC:zfin_curators" ;
     owl:annotatedProperty obo:RO_0002432 ;
-    owl:annotatedSource <http://model.geneontology.org/ZFIN_ZDB-GENE-070822-18/173bbaf1-3baf-4076-ae1e-70ce4cdab763> ;
-    owl:annotatedTarget <http://model.geneontology.org/ZFIN_ZDB-GENE-070822-18/f65e8a9b-5ecf-4276-87e8-2872a0b3e5ff> .
+    owl:annotatedSource <http://model.geneontology.org/ZFIN_ZDB-GENE-070822-18/06ba45c4-0542-46e5-baf0-65c08e67e817> ;
+    owl:annotatedTarget <http://model.geneontology.org/ZFIN_ZDB-GENE-070822-18/d0d74f88-1f8c-4dc1-85df-364fc544b366> .
 

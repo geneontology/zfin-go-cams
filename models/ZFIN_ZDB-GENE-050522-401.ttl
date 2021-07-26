@@ -2,14 +2,14 @@
 @prefix GO: <http://purl.obolibrary.org/obo/GO_> .
 @prefix ZFIN: <http://identifiers.org/zfin/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix ns1: <http://geneontology.org/lego/> .
-@prefix ns2: <http://purl.org/pav/> .
+@prefix ns1: <http://purl.org/pav/> .
+@prefix ns2: <http://geneontology.org/lego/> .
 @prefix ns3: <https://w3id.org/biolink/vocab/> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-ns1:evidence a owl:AnnotationProperty .
+ns2:evidence a owl:AnnotationProperty .
 
 <http://geneontology.org/lego/hint/layout/x> a owl:AnnotationProperty .
 
@@ -21,46 +21,46 @@ dc:date a owl:AnnotationProperty .
 
 dc:source a owl:AnnotationProperty .
 
-ns2:providedBy a owl:AnnotationProperty .
+ns1:providedBy a owl:AnnotationProperty .
 
 <http://model.geneontology.org/ZFIN_ZDB-GENE-050522-401> a owl:Ontology ;
-    ns1:modelstate "development" ;
+    ns2:modelstate "production" ;
     dc:contributor "GOC:zfin_curators" ;
-    dc:date "2021-07-23" ;
+    dc:date "2021-07-26" ;
     dc:title "crygmxl2 (ZFIN:ZDB-GENE-050522-401)" ;
-    ns2:providedBy "http://zfin.org" ;
+    ns1:providedBy "http://zfin.org" ;
     owl:versionIRI <http://model.geneontology.org/ZFIN_ZDB-GENE-050522-401> ;
     ns3:in_taxon obo:NCBITaxon_7955 .
 
-<http://model.geneontology.org/ZFIN_ZDB-GENE-050522-401/560b89f6-f087-4834-ae11-2a056449687b> a ECO:0000307,
+<http://model.geneontology.org/ZFIN_ZDB-GENE-050522-401/4f95bcc5-840c-40be-8fda-169ea00b8a8c> a ZFIN:ZDB-GENE-050522-401,
+        owl:NamedIndividual ;
+    obo:RO_0002432 <http://model.geneontology.org/ZFIN_ZDB-GENE-050522-401/97c85cc5-2062-4141-9f29-638c49b62ad7> ;
+    dc:contributor "GOC:zfin_curators" ;
+    dc:date "2005-05-22" ;
+    ns1:providedBy "http://zfin.org" .
+
+<http://model.geneontology.org/ZFIN_ZDB-GENE-050522-401/6ff0165c-5cf0-4bc0-91cb-c11d2a51c6cf> a ECO:0000307,
         owl:NamedIndividual ;
     dc:contributor "GOC:zfin_curators" ;
     dc:date "2005-05-22" ;
     dc:source "ZFIN:ZDB-PUB-031118-1" ;
-    ns2:providedBy "http://zfin.org" .
-
-<http://model.geneontology.org/ZFIN_ZDB-GENE-050522-401/955394a6-f5f2-4ec8-a51f-71c5cc66c1a6> a ZFIN:ZDB-GENE-050522-401,
-        owl:NamedIndividual ;
-    obo:RO_0002432 <http://model.geneontology.org/ZFIN_ZDB-GENE-050522-401/b514d4df-8456-4c67-b834-5041d948060e> ;
-    dc:contributor "GOC:zfin_curators" ;
-    dc:date "2005-05-22" ;
-    ns2:providedBy "http://zfin.org" .
+    ns1:providedBy "http://zfin.org" .
 
 obo:RO_0002432 a owl:ObjectProperty .
 
-<http://model.geneontology.org/ZFIN_ZDB-GENE-050522-401/b514d4df-8456-4c67-b834-5041d948060e> a GO:0005575,
+<http://model.geneontology.org/ZFIN_ZDB-GENE-050522-401/97c85cc5-2062-4141-9f29-638c49b62ad7> a GO:0005575,
         owl:NamedIndividual ;
     dc:contributor "GOC:zfin_curators" ;
     dc:date "2005-05-22" ;
-    ns2:providedBy "http://zfin.org" .
+    ns1:providedBy "http://zfin.org" .
 
 [] a owl:Axiom ;
-    ns1:evidence <http://model.geneontology.org/ZFIN_ZDB-GENE-050522-401/560b89f6-f087-4834-ae11-2a056449687b> ;
+    ns2:evidence <http://model.geneontology.org/ZFIN_ZDB-GENE-050522-401/6ff0165c-5cf0-4bc0-91cb-c11d2a51c6cf> ;
     dc:contributor "GOC:zfin_curators" ;
     dc:date "2005-05-22" ;
-    ns2:providedBy "http://zfin.org" ;
+    ns1:providedBy "http://zfin.org" ;
     rdfs:comment "ZFIN:ZDB-GENE-050522-401  RO:0002432 GO:0005575 ZFIN:ZDB-PUB-031118-1 ECO:0000307   2005-05-22 ZFIN  contributor-id=GOC:zfin_curators" ;
     owl:annotatedProperty obo:RO_0002432 ;
-    owl:annotatedSource <http://model.geneontology.org/ZFIN_ZDB-GENE-050522-401/955394a6-f5f2-4ec8-a51f-71c5cc66c1a6> ;
-    owl:annotatedTarget <http://model.geneontology.org/ZFIN_ZDB-GENE-050522-401/b514d4df-8456-4c67-b834-5041d948060e> .
+    owl:annotatedSource <http://model.geneontology.org/ZFIN_ZDB-GENE-050522-401/4f95bcc5-840c-40be-8fda-169ea00b8a8c> ;
+    owl:annotatedTarget <http://model.geneontology.org/ZFIN_ZDB-GENE-050522-401/97c85cc5-2062-4141-9f29-638c49b62ad7> .
 

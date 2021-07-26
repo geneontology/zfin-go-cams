@@ -2,14 +2,14 @@
 @prefix GO: <http://purl.obolibrary.org/obo/GO_> .
 @prefix ZFIN: <http://identifiers.org/zfin/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix ns1: <http://geneontology.org/lego/> .
-@prefix ns2: <http://purl.org/pav/> .
+@prefix ns1: <http://purl.org/pav/> .
+@prefix ns2: <http://geneontology.org/lego/> .
 @prefix ns3: <https://w3id.org/biolink/vocab/> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-ns1:evidence a owl:AnnotationProperty .
+ns2:evidence a owl:AnnotationProperty .
 
 <http://geneontology.org/lego/hint/layout/x> a owl:AnnotationProperty .
 
@@ -21,46 +21,46 @@ dc:date a owl:AnnotationProperty .
 
 dc:source a owl:AnnotationProperty .
 
-ns2:providedBy a owl:AnnotationProperty .
+ns1:providedBy a owl:AnnotationProperty .
 
 <http://model.geneontology.org/ZFIN_ZDB-GENE-050208-22> a owl:Ontology ;
-    ns1:modelstate "development" ;
+    ns2:modelstate "production" ;
     dc:contributor "GOC:zfin_curators" ;
-    dc:date "2021-07-23" ;
+    dc:date "2021-07-26" ;
     dc:title "sorl1 (ZFIN:ZDB-GENE-050208-22)" ;
-    ns2:providedBy "http://zfin.org" ;
+    ns1:providedBy "http://zfin.org" ;
     owl:versionIRI <http://model.geneontology.org/ZFIN_ZDB-GENE-050208-22> ;
     ns3:in_taxon obo:NCBITaxon_7955 .
 
-<http://model.geneontology.org/ZFIN_ZDB-GENE-050208-22/7a300e51-b88a-4266-ad95-7ae6d7999b85> a ECO:0000307,
+<http://model.geneontology.org/ZFIN_ZDB-GENE-050208-22/9c81e303-7415-47e0-93ca-3ad14755054a> a GO:0003674,
+        owl:NamedIndividual ;
+    obo:RO_0002333 <http://model.geneontology.org/ZFIN_ZDB-GENE-050208-22/e2918cb3-31cb-4929-adbd-0543c7ab70c2> ;
+    dc:contributor "GOC:zfin_curators" ;
+    dc:date "2005-02-08" ;
+    ns1:providedBy "http://zfin.org" .
+
+<http://model.geneontology.org/ZFIN_ZDB-GENE-050208-22/ae80a10f-c829-487c-9418-cecddc5ecaa8> a ECO:0000307,
         owl:NamedIndividual ;
     dc:contributor "GOC:zfin_curators" ;
     dc:date "2005-02-08" ;
     dc:source "ZFIN:ZDB-PUB-031118-1" ;
-    ns2:providedBy "http://zfin.org" .
-
-<http://model.geneontology.org/ZFIN_ZDB-GENE-050208-22/b430b5c7-2e9d-4d9c-8f41-e50947317c29> a GO:0003674,
-        owl:NamedIndividual ;
-    obo:RO_0002333 <http://model.geneontology.org/ZFIN_ZDB-GENE-050208-22/b0ae8561-e74d-4e16-8376-e5bc09369ec0> ;
-    dc:contributor "GOC:zfin_curators" ;
-    dc:date "2005-02-08" ;
-    ns2:providedBy "http://zfin.org" .
+    ns1:providedBy "http://zfin.org" .
 
 obo:RO_0002333 a owl:ObjectProperty .
 
-<http://model.geneontology.org/ZFIN_ZDB-GENE-050208-22/b0ae8561-e74d-4e16-8376-e5bc09369ec0> a ZFIN:ZDB-GENE-050208-22,
+<http://model.geneontology.org/ZFIN_ZDB-GENE-050208-22/e2918cb3-31cb-4929-adbd-0543c7ab70c2> a ZFIN:ZDB-GENE-050208-22,
         owl:NamedIndividual ;
     dc:contributor "GOC:zfin_curators" ;
     dc:date "2005-02-08" ;
-    ns2:providedBy "http://zfin.org" .
+    ns1:providedBy "http://zfin.org" .
 
 [] a owl:Axiom ;
-    ns1:evidence <http://model.geneontology.org/ZFIN_ZDB-GENE-050208-22/7a300e51-b88a-4266-ad95-7ae6d7999b85> ;
+    ns2:evidence <http://model.geneontology.org/ZFIN_ZDB-GENE-050208-22/ae80a10f-c829-487c-9418-cecddc5ecaa8> ;
     dc:contributor "GOC:zfin_curators" ;
     dc:date "2005-02-08" ;
-    ns2:providedBy "http://zfin.org" ;
+    ns1:providedBy "http://zfin.org" ;
     rdfs:comment "ZFIN:ZDB-GENE-050208-22  RO:0002327 GO:0003674 ZFIN:ZDB-PUB-031118-1 ECO:0000307   2005-02-08 ZFIN  contributor-id=GOC:zfin_curators" ;
     owl:annotatedProperty obo:RO_0002333 ;
-    owl:annotatedSource <http://model.geneontology.org/ZFIN_ZDB-GENE-050208-22/b430b5c7-2e9d-4d9c-8f41-e50947317c29> ;
-    owl:annotatedTarget <http://model.geneontology.org/ZFIN_ZDB-GENE-050208-22/b0ae8561-e74d-4e16-8376-e5bc09369ec0> .
+    owl:annotatedSource <http://model.geneontology.org/ZFIN_ZDB-GENE-050208-22/9c81e303-7415-47e0-93ca-3ad14755054a> ;
+    owl:annotatedTarget <http://model.geneontology.org/ZFIN_ZDB-GENE-050208-22/e2918cb3-31cb-4929-adbd-0543c7ab70c2> .
 

@@ -2,14 +2,14 @@
 @prefix GO: <http://purl.obolibrary.org/obo/GO_> .
 @prefix ZFIN: <http://identifiers.org/zfin/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix ns1: <http://geneontology.org/lego/> .
-@prefix ns2: <http://purl.org/pav/> .
+@prefix ns1: <http://purl.org/pav/> .
+@prefix ns2: <http://geneontology.org/lego/> .
 @prefix ns3: <https://w3id.org/biolink/vocab/> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-ns1:evidence a owl:AnnotationProperty .
+ns2:evidence a owl:AnnotationProperty .
 
 <http://geneontology.org/lego/hint/layout/x> a owl:AnnotationProperty .
 
@@ -21,46 +21,46 @@ dc:date a owl:AnnotationProperty .
 
 dc:source a owl:AnnotationProperty .
 
-ns2:providedBy a owl:AnnotationProperty .
+ns1:providedBy a owl:AnnotationProperty .
 
 <http://model.geneontology.org/ZFIN_ZDB-GENE-051030-24> a owl:Ontology ;
-    ns1:modelstate "development" ;
+    ns2:modelstate "production" ;
     dc:contributor "GOC:zfin_curators" ;
-    dc:date "2021-07-23" ;
+    dc:date "2021-07-26" ;
     dc:title "srek1ip1 (ZFIN:ZDB-GENE-051030-24)" ;
-    ns2:providedBy "http://zfin.org" ;
+    ns1:providedBy "http://zfin.org" ;
     owl:versionIRI <http://model.geneontology.org/ZFIN_ZDB-GENE-051030-24> ;
     ns3:in_taxon obo:NCBITaxon_7955 .
 
-<http://model.geneontology.org/ZFIN_ZDB-GENE-051030-24/11c41a96-1154-4bee-aa3a-062e901b9f86> a ECO:0000307,
+<http://model.geneontology.org/ZFIN_ZDB-GENE-051030-24/8dd0253d-4454-4afa-9080-7ecc39ae4245> a ZFIN:ZDB-GENE-051030-24,
+        owl:NamedIndividual ;
+    obo:RO_0002432 <http://model.geneontology.org/ZFIN_ZDB-GENE-051030-24/187f8293-97d1-47bc-b415-86a11eca306e> ;
+    dc:contributor "GOC:zfin_curators" ;
+    dc:date "2005-10-30" ;
+    ns1:providedBy "http://zfin.org" .
+
+<http://model.geneontology.org/ZFIN_ZDB-GENE-051030-24/d33c8d99-4ab7-4171-82dc-1b253fb9f8c4> a ECO:0000307,
         owl:NamedIndividual ;
     dc:contributor "GOC:zfin_curators" ;
     dc:date "2005-10-30" ;
     dc:source "ZFIN:ZDB-PUB-031118-1" ;
-    ns2:providedBy "http://zfin.org" .
-
-<http://model.geneontology.org/ZFIN_ZDB-GENE-051030-24/86a1fb9a-923e-441e-87f7-67fa2769fa3e> a ZFIN:ZDB-GENE-051030-24,
-        owl:NamedIndividual ;
-    obo:RO_0002432 <http://model.geneontology.org/ZFIN_ZDB-GENE-051030-24/a2f3300f-dbf5-4f9f-b41d-fe9ab98f6a3e> ;
-    dc:contributor "GOC:zfin_curators" ;
-    dc:date "2005-10-30" ;
-    ns2:providedBy "http://zfin.org" .
+    ns1:providedBy "http://zfin.org" .
 
 obo:RO_0002432 a owl:ObjectProperty .
 
-<http://model.geneontology.org/ZFIN_ZDB-GENE-051030-24/a2f3300f-dbf5-4f9f-b41d-fe9ab98f6a3e> a GO:0005575,
+<http://model.geneontology.org/ZFIN_ZDB-GENE-051030-24/187f8293-97d1-47bc-b415-86a11eca306e> a GO:0005575,
         owl:NamedIndividual ;
     dc:contributor "GOC:zfin_curators" ;
     dc:date "2005-10-30" ;
-    ns2:providedBy "http://zfin.org" .
+    ns1:providedBy "http://zfin.org" .
 
 [] a owl:Axiom ;
-    ns1:evidence <http://model.geneontology.org/ZFIN_ZDB-GENE-051030-24/11c41a96-1154-4bee-aa3a-062e901b9f86> ;
+    ns2:evidence <http://model.geneontology.org/ZFIN_ZDB-GENE-051030-24/d33c8d99-4ab7-4171-82dc-1b253fb9f8c4> ;
     dc:contributor "GOC:zfin_curators" ;
     dc:date "2005-10-30" ;
-    ns2:providedBy "http://zfin.org" ;
+    ns1:providedBy "http://zfin.org" ;
     rdfs:comment "ZFIN:ZDB-GENE-051030-24  RO:0002432 GO:0005575 ZFIN:ZDB-PUB-031118-1 ECO:0000307   2005-10-30 ZFIN  contributor-id=GOC:zfin_curators" ;
     owl:annotatedProperty obo:RO_0002432 ;
-    owl:annotatedSource <http://model.geneontology.org/ZFIN_ZDB-GENE-051030-24/86a1fb9a-923e-441e-87f7-67fa2769fa3e> ;
-    owl:annotatedTarget <http://model.geneontology.org/ZFIN_ZDB-GENE-051030-24/a2f3300f-dbf5-4f9f-b41d-fe9ab98f6a3e> .
+    owl:annotatedSource <http://model.geneontology.org/ZFIN_ZDB-GENE-051030-24/8dd0253d-4454-4afa-9080-7ecc39ae4245> ;
+    owl:annotatedTarget <http://model.geneontology.org/ZFIN_ZDB-GENE-051030-24/187f8293-97d1-47bc-b415-86a11eca306e> .
 

@@ -2,14 +2,14 @@
 @prefix GO: <http://purl.obolibrary.org/obo/GO_> .
 @prefix ZFIN: <http://identifiers.org/zfin/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix ns1: <http://geneontology.org/lego/> .
-@prefix ns2: <http://purl.org/pav/> .
+@prefix ns1: <http://purl.org/pav/> .
+@prefix ns2: <http://geneontology.org/lego/> .
 @prefix ns3: <https://w3id.org/biolink/vocab/> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-ns1:evidence a owl:AnnotationProperty .
+ns2:evidence a owl:AnnotationProperty .
 
 <http://geneontology.org/lego/hint/layout/x> a owl:AnnotationProperty .
 
@@ -21,46 +21,46 @@ dc:date a owl:AnnotationProperty .
 
 dc:source a owl:AnnotationProperty .
 
-ns2:providedBy a owl:AnnotationProperty .
+ns1:providedBy a owl:AnnotationProperty .
 
 <http://model.geneontology.org/ZFIN_ZDB-GENE-050417-409> a owl:Ontology ;
-    ns1:modelstate "development" ;
+    ns2:modelstate "production" ;
     dc:contributor "GOC:zfin_curators" ;
-    dc:date "2021-07-23" ;
+    dc:date "2021-07-26" ;
     dc:title "palm1a (ZFIN:ZDB-GENE-050417-409)" ;
-    ns2:providedBy "http://zfin.org" ;
+    ns1:providedBy "http://zfin.org" ;
     owl:versionIRI <http://model.geneontology.org/ZFIN_ZDB-GENE-050417-409> ;
     ns3:in_taxon obo:NCBITaxon_7955 .
 
-<http://model.geneontology.org/ZFIN_ZDB-GENE-050417-409/3b5023f8-2243-4519-ad34-b8b92e26e3bb> a GO:0003674,
-        owl:NamedIndividual ;
-    obo:RO_0002333 <http://model.geneontology.org/ZFIN_ZDB-GENE-050417-409/897c5217-be81-4516-9a0c-8d99754d9fad> ;
-    dc:contributor "GOC:zfin_curators" ;
-    dc:date "2005-04-17" ;
-    ns2:providedBy "http://zfin.org" .
-
-<http://model.geneontology.org/ZFIN_ZDB-GENE-050417-409/eacee5e4-cb52-40d2-ab8b-b09bb5eed463> a ECO:0000307,
+<http://model.geneontology.org/ZFIN_ZDB-GENE-050417-409/0d8f9464-2aaf-4d07-99f3-ff23dc386c83> a ECO:0000307,
         owl:NamedIndividual ;
     dc:contributor "GOC:zfin_curators" ;
     dc:date "2005-04-17" ;
     dc:source "ZFIN:ZDB-PUB-031118-1" ;
-    ns2:providedBy "http://zfin.org" .
+    ns1:providedBy "http://zfin.org" .
+
+<http://model.geneontology.org/ZFIN_ZDB-GENE-050417-409/dd4425fb-4cd6-4f52-bb7e-7018c42eb6f4> a GO:0003674,
+        owl:NamedIndividual ;
+    obo:RO_0002333 <http://model.geneontology.org/ZFIN_ZDB-GENE-050417-409/6a329643-cc2a-44cd-af62-1be1d335b5cc> ;
+    dc:contributor "GOC:zfin_curators" ;
+    dc:date "2005-04-17" ;
+    ns1:providedBy "http://zfin.org" .
 
 obo:RO_0002333 a owl:ObjectProperty .
 
-<http://model.geneontology.org/ZFIN_ZDB-GENE-050417-409/897c5217-be81-4516-9a0c-8d99754d9fad> a ZFIN:ZDB-GENE-050417-409,
+<http://model.geneontology.org/ZFIN_ZDB-GENE-050417-409/6a329643-cc2a-44cd-af62-1be1d335b5cc> a ZFIN:ZDB-GENE-050417-409,
         owl:NamedIndividual ;
     dc:contributor "GOC:zfin_curators" ;
     dc:date "2005-04-17" ;
-    ns2:providedBy "http://zfin.org" .
+    ns1:providedBy "http://zfin.org" .
 
 [] a owl:Axiom ;
-    ns1:evidence <http://model.geneontology.org/ZFIN_ZDB-GENE-050417-409/eacee5e4-cb52-40d2-ab8b-b09bb5eed463> ;
+    ns2:evidence <http://model.geneontology.org/ZFIN_ZDB-GENE-050417-409/0d8f9464-2aaf-4d07-99f3-ff23dc386c83> ;
     dc:contributor "GOC:zfin_curators" ;
     dc:date "2005-04-17" ;
-    ns2:providedBy "http://zfin.org" ;
+    ns1:providedBy "http://zfin.org" ;
     rdfs:comment "ZFIN:ZDB-GENE-050417-409  RO:0002327 GO:0003674 ZFIN:ZDB-PUB-031118-1 ECO:0000307   2005-04-17 ZFIN  contributor-id=GOC:zfin_curators" ;
     owl:annotatedProperty obo:RO_0002333 ;
-    owl:annotatedSource <http://model.geneontology.org/ZFIN_ZDB-GENE-050417-409/3b5023f8-2243-4519-ad34-b8b92e26e3bb> ;
-    owl:annotatedTarget <http://model.geneontology.org/ZFIN_ZDB-GENE-050417-409/897c5217-be81-4516-9a0c-8d99754d9fad> .
+    owl:annotatedSource <http://model.geneontology.org/ZFIN_ZDB-GENE-050417-409/dd4425fb-4cd6-4f52-bb7e-7018c42eb6f4> ;
+    owl:annotatedTarget <http://model.geneontology.org/ZFIN_ZDB-GENE-050417-409/6a329643-cc2a-44cd-af62-1be1d335b5cc> .
 
