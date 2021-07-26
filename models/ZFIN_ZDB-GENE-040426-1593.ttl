@@ -2,14 +2,14 @@
 @prefix GO: <http://purl.obolibrary.org/obo/GO_> .
 @prefix ZFIN: <http://identifiers.org/zfin/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix ns1: <http://geneontology.org/lego/> .
-@prefix ns2: <http://purl.org/pav/> .
+@prefix ns1: <http://purl.org/pav/> .
+@prefix ns2: <http://geneontology.org/lego/> .
 @prefix ns3: <https://w3id.org/biolink/vocab/> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-ns1:evidence a owl:AnnotationProperty .
+ns2:evidence a owl:AnnotationProperty .
 
 <http://geneontology.org/lego/hint/layout/x> a owl:AnnotationProperty .
 
@@ -21,46 +21,46 @@ dc:date a owl:AnnotationProperty .
 
 dc:source a owl:AnnotationProperty .
 
-ns2:providedBy a owl:AnnotationProperty .
+ns1:providedBy a owl:AnnotationProperty .
 
 <http://model.geneontology.org/ZFIN_ZDB-GENE-040426-1593> a owl:Ontology ;
-    ns1:modelstate "development" ;
+    ns2:modelstate "production" ;
     dc:contributor "GOC:zfin_curators" ;
-    dc:date "2021-07-23" ;
+    dc:date "2021-07-26" ;
     dc:title "myl13 (ZFIN:ZDB-GENE-040426-1593)" ;
-    ns2:providedBy "http://zfin.org" ;
+    ns1:providedBy "http://zfin.org" ;
     owl:versionIRI <http://model.geneontology.org/ZFIN_ZDB-GENE-040426-1593> ;
     ns3:in_taxon obo:NCBITaxon_7955 .
 
-<http://model.geneontology.org/ZFIN_ZDB-GENE-040426-1593/bd3030c4-94d3-49c3-8976-c7725f7b0018> a ECO:0000307,
+<http://model.geneontology.org/ZFIN_ZDB-GENE-040426-1593/f1588927-f7d2-4c7b-9c0f-7a13ca5e7ae3> a ZFIN:ZDB-GENE-040426-1593,
+        owl:NamedIndividual ;
+    obo:RO_0002432 <http://model.geneontology.org/ZFIN_ZDB-GENE-040426-1593/e8f82346-53f4-42ee-9bef-436699678508> ;
+    dc:contributor "GOC:zfin_curators" ;
+    dc:date "2005-01-03" ;
+    ns1:providedBy "http://zfin.org" .
+
+<http://model.geneontology.org/ZFIN_ZDB-GENE-040426-1593/f304b487-235a-498a-936c-667c4eb9bff2> a ECO:0000307,
         owl:NamedIndividual ;
     dc:contributor "GOC:zfin_curators" ;
     dc:date "2005-01-03" ;
     dc:source "ZFIN:ZDB-PUB-031118-1" ;
-    ns2:providedBy "http://zfin.org" .
-
-<http://model.geneontology.org/ZFIN_ZDB-GENE-040426-1593/d513e95d-a8a7-4deb-93aa-a08060ad8360> a ZFIN:ZDB-GENE-040426-1593,
-        owl:NamedIndividual ;
-    obo:RO_0002432 <http://model.geneontology.org/ZFIN_ZDB-GENE-040426-1593/70519843-cc1e-4f24-a2b7-fc24e6c5e109> ;
-    dc:contributor "GOC:zfin_curators" ;
-    dc:date "2005-01-03" ;
-    ns2:providedBy "http://zfin.org" .
+    ns1:providedBy "http://zfin.org" .
 
 obo:RO_0002432 a owl:ObjectProperty .
 
-<http://model.geneontology.org/ZFIN_ZDB-GENE-040426-1593/70519843-cc1e-4f24-a2b7-fc24e6c5e109> a GO:0005575,
+<http://model.geneontology.org/ZFIN_ZDB-GENE-040426-1593/e8f82346-53f4-42ee-9bef-436699678508> a GO:0005575,
         owl:NamedIndividual ;
     dc:contributor "GOC:zfin_curators" ;
     dc:date "2005-01-03" ;
-    ns2:providedBy "http://zfin.org" .
+    ns1:providedBy "http://zfin.org" .
 
 [] a owl:Axiom ;
-    ns1:evidence <http://model.geneontology.org/ZFIN_ZDB-GENE-040426-1593/bd3030c4-94d3-49c3-8976-c7725f7b0018> ;
+    ns2:evidence <http://model.geneontology.org/ZFIN_ZDB-GENE-040426-1593/f304b487-235a-498a-936c-667c4eb9bff2> ;
     dc:contributor "GOC:zfin_curators" ;
     dc:date "2005-01-03" ;
-    ns2:providedBy "http://zfin.org" ;
+    ns1:providedBy "http://zfin.org" ;
     rdfs:comment "ZFIN:ZDB-GENE-040426-1593  RO:0002432 GO:0005575 ZFIN:ZDB-PUB-031118-1 ECO:0000307   2005-01-03 ZFIN  contributor-id=GOC:zfin_curators" ;
     owl:annotatedProperty obo:RO_0002432 ;
-    owl:annotatedSource <http://model.geneontology.org/ZFIN_ZDB-GENE-040426-1593/d513e95d-a8a7-4deb-93aa-a08060ad8360> ;
-    owl:annotatedTarget <http://model.geneontology.org/ZFIN_ZDB-GENE-040426-1593/70519843-cc1e-4f24-a2b7-fc24e6c5e109> .
+    owl:annotatedSource <http://model.geneontology.org/ZFIN_ZDB-GENE-040426-1593/f1588927-f7d2-4c7b-9c0f-7a13ca5e7ae3> ;
+    owl:annotatedTarget <http://model.geneontology.org/ZFIN_ZDB-GENE-040426-1593/e8f82346-53f4-42ee-9bef-436699678508> .
 
